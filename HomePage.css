@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: black;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.hero {
+
+    background: white;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing, .combo, .business {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.pricing .container, .combo .container, .business .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px; /* Điều chỉnh vị trí của chữ (ở dưới) */
+    left: 10px; /* Điều chỉnh vị trí của chữ (ở trái) */
+    background-color: rgba(0, 0, 0, 0.7); /* Độ trong suốt của hộp chữ */
+    color: #fff; /* Màu chữ */
+    padding: 5px 10px; /* Khoảng cách giữa chữ và viền của hộp chữ */
+    font-size: 14px; /* Kích thước chữ */
+}
+
+/* Thêm kiểu cho nút */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 40%; /* Làm cho nút tròn */
+    padding: 20px; /* Kích thước của nút */
+    font-size: 24px; /* Cỡ chữ của biểu tượng nút */
+  }
+  
+  .prev {
+    left: 20px; /* Khoảng cách từ mép trái của banner */
+  }
+  
+  .next {
+    right: 20px; /* Khoảng cách từ mép phải của banner */
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.truyenhinh:hover{
+    color: orangered;
+}
+
+.custom-image-container {
+    text-align: center; /* Căn giữa nội dung theo chiều ngang */
+  }
+  
+  .custom-resizable-image {
+    max-width: 100%; /* Hình ảnh không vượt quá chiều rộng của phần tử cha */
+    height: auto; /* Chiều cao tự động điều chỉnh để giữ tỷ lệ */
+  }
+.number1 {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử con */
+  }
+  
+  .number1 > div {
+    flex: 1; /* Phần tử con sẽ chiếm hết không gian của phần tử cha */
+    margin: 0 5px; /* Khoảng cách giữa các phần tử con */
+  }
+  
+  .number1 img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm hết không gian của phần tử con */
+    height: auto; /* Chiều cao tự động điều chỉnh để giữ tỷ lệ */
+  }
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    flex: 1 0 30%; /* Phần tử sẽ mở rộng, không co lại, chiếm 30% chiều rộng */
+    margin-right: 20px; /* Khoảng cách giữa các phần tử */
+    margin-bottom: 20px; /* Khoảng cách giữa các hàng */
+    display: flex;
+  }
+  
+  .icon {
+    width: 80px; /* Chiều rộng của icon */
+    height: 80px; /* Chiều cao của icon */
+    margin-right: 20px; /* Khoảng cách giữa icon và nội dung */
+  }
+  
+  .icon img {
+    max-width: 100%; /* Đảm bảo icon không vượt quá kích thước của container */
+  }
+  
+  .content {
+    flex-grow: 1; /* Nội dung sẽ mở rộng để chiếm hết không gian còn lại */
+  }
+  
+  .content h3 {
+    margin-top: 0; /* Loại bỏ margin top của tiêu đề */
+  }
+  
+  .content p {
+    margin-bottom: 0; /* Loại bỏ margin bottom của đoạn văn bản */
+  }
+  .flex-container {
+  display: flex;
+  align-items: center;
+  background-color: #424242;
+  color: white;
+}
+
+#dich-vu .content, #lien-he .content {
+  margin-left: 60px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+#dich-vu img, #lien-he img {
+  flex-shrink: 0; /* Ảnh sẽ không co lại */
+}
